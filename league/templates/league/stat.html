@@ -1,0 +1,139 @@
+{% extends 'league/base.html' %}
+{% load static %}
+
+{% block base.css %} <link rel="stylesheet" href="{% static 'league/stat.css'%}"> {% endblock base.css %}
+
+{% block body %}
+<body>
+    {% block header %}
+        <header id="head">
+                <h1>Top Players</h1>
+        </header>
+    {% endblock header %}
+
+    <div id="main">
+        <div id="domain">
+            <div class="batch">
+                <h2>Goals</h2>
+                {% for items in stats %}
+                <li>{{items.goals}}</li>
+                {% endfor %}
+            </div>
+           
+            
+            <div class="batch">
+                <h2>Assist</h2>
+                {% for items in stats %}
+                <li>{{items.assists}}</li>
+                {% endfor %}
+            </div>
+          
+           
+            <div class="batch">
+                <h2>Goals + Assist</h2>
+                {% for items in stats %}
+                <li>{{items.goals_assits}}</li>
+                {% endfor %}
+            </div>
+
+            
+            <div class="batch">
+                <h2>Penalty_Goals</h2>
+                {% for items in stats %}
+                <li>{{items.penalty_goals}}</li>
+                {% endfor %}
+            </div>
+
+
+            <div class="batch">
+                <h2>Freekick_Goals</h2>
+                {% for items in stats %}
+                <li>{{items.freekick_goals}}</li>
+                {% endfor %}
+            </div>
+
+            <div class="batch">
+                <h2>Yellow_Cards</h2>
+                {% for items in stats %}
+                <li>{{items.yellow_cards}}</li>
+                {% endfor %}
+            </div>
+
+            
+            <div class="batch">
+                <h2>Red_Cards</h2>
+                {% for items in stats %}
+                <li>{{items.red_cars}}</li>
+                {% endfor %}
+            </div>
+
+        </div>
+
+
+        <div id="co_domain">
+            <div class="batch">
+                <h2>Penalties_Won</h2>
+                {% for items in stats %}
+                <li>{{items.penalties_won}}</li>
+                {% endfor %}
+            </div>
+            
+
+           
+            <div class="batch">
+                <h2>Chances_Created</h2>
+                {% for items in stats %}
+                <li>{{items.chances_created}}</li>
+                {% endfor %}
+            </div>
+            
+
+            
+            <div class="batch">
+                <h2>Chances_Missed</h2>
+                {% for items in stats %}
+                <li>{{items.chances_missed}}</li>
+                {% endfor %}
+            </div>
+           
+
+           
+            <div class="batch">
+                <h2>Acc_Pass_Per_Game</h2>
+                {% for items in stats %}
+                <li>{{items.acc_pass_per_g}}</li>
+                {% endfor %}
+            </div>
+            
+
+            
+            <div class="batch">
+                <h2>Succ_Dribb_Per_Game</h2>
+                {% for items in stats %}
+                <li>{{items.succ_dribbles}}</li>
+                {% endfor %}
+            </div>
+            
+
+           
+            <div class="batch">
+                <h2>Clearances_Per_Game</h2>
+                {% for items in stats %}
+                <li>{{items.clearances}}</li>
+                {% endfor %}
+            </div>
+           
+
+            
+            <div class="batch">
+                <h2>Clean_Sheet</h2>
+                {% for items in stats %}
+                <li>{{items.clean_sheet}}</li>
+                {% endfor %}
+            </div>
+            
+        </div>
+    </div>
+</body>
+    
+{% endblock body %}

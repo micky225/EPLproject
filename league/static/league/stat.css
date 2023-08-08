@@ -1,0 +1,74 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(images/log.webp);
+    background-size: cover;
+}
+
+#head{
+    background-color: var(--bg-color);
+    /* border: 1px solid; */
+    height: 10vh;
+    padding-left: 40px;
+}
+
+h1{
+    color: #1e064bf5;
+}
+
+h2{
+    color: #1e064bf5;
+}
+
+#main{
+    /* border: 1px solid black; */
+    height: 78vh;
+    margin-right: 2%;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+#domain{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+}
+
+#co_domain{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    margin-top: 5%;
+}
+
+.batch{
+    /* border: 1px solid black; */
+    width: 14.2%;
+    height: 100%;
+    margin-left: 2%;
+    background-color: var(--bg-color);
+    box-shadow: rgba(17, 12, 46, 0.5) 0px 5px 10px 0px;
+    background: hsla(0, 45%, 2%, 0.1);
+    backdrop-filter: blur(1rem);
+    transition: all .40s ease; 
+    border-radius: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 2%;
+
+}
+
+.batch:hover{
+    cursor: pointer;
+    transform: translateX(9px);
+}
+
+li{
+    list-style: none;
+    margin-top: 10%;
+}

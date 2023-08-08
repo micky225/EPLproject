@@ -1,0 +1,169 @@
+{% extends 'league/base.html' %}
+
+{% load static %}
+
+{% block style_css %}
+<link rel="stylesheet" href="{% static 'league/players.css'%}">
+{% endblock  %}
+
+
+{% comment %} {% block title %} Team Statistics {% endblock title %} {% endcomment %}
+
+ {% block body %}
+
+    <body>
+        {% block header %}
+        <header id='head'>
+            <div id='move'>
+                <h1>Team Statistics</h1>
+            </div>
+        </header>
+        {% endblock header %}
+
+       <div id='main'>
+
+        <div class='domain'>
+            <h2>Man.City</h2>
+            {% for items in players %}
+            <li> {{items.team_a}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>Arsenal</h2>
+            {% for items in players %}
+            <li> {{items.team_b}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>Newcastle</h2>
+            {% for items in players %}
+            <li> {{items.team_c}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>Man.United</h2>
+            {% for items in players %}
+            <li> {{items.team_d}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>Liverpool</h2>
+            {% for items in players %}
+            <li> {{items.team_e}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>Tottenham</h2>
+            {% for items in players %}
+            <li> {{items.team_f}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>Aston Villa</h2>
+            {% for items in players %}
+            <li> {{items.team_g}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>Brighton</h2>
+            {% for items in players %}
+            <li> {{items.team_h}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>Fulham</h2>
+            {% for items in players %}
+            <li> {{items.team_i}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>Brentford</h2>
+            {% for items in players %}
+            <li> {{items.team_j}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>Chelsea</h2>
+            {% for items in players %}
+            <li> {{items.team_k}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>Crystal Palace</h2>
+            {% for items in players %}
+            <li> {{items.team_l}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>Wolves</h2>
+            {% for items in players %}
+            <li> {{items.team_m}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>Bournemouth</h2>
+            {% for items in players %}
+            <li> {{items.team_n}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>West Ham</h2>
+            {% for items in players %}
+            <li> {{items.team_o}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>Forest</h2>
+            {% for items in players %}
+            <li> {{items.team_p}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>Everton</h2>
+            {% for items in players %}
+            <li> {{items.team_q}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>Leeds</h2>
+            {% for items in players %}
+            <li> {{items.team_r}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>Leicester</h2>
+            {% for items in players %}
+            <li> {{items.team_s}}</li>
+            {% endfor %}
+        </div>
+
+        <div class='domain'>
+            <h2>Southampton</h2>
+            {% for items in players %}
+            <li> {{items.team_t}}</li>
+            {% endfor %}
+        </div>
+
+       </div>
+
+    </body>
+ 
+ {% endblock body %}

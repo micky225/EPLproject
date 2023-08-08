@@ -1,0 +1,84 @@
+{% extends 'league/base.html' %}
+
+{% load static %}
+
+{% comment %} {% block title %}League Table{% endblock title %} {% endcomment %}
+{% block base.css %}
+<link rel="stylesheet" href="{% static 'league/base.css'%}">
+{% endblock base.css %}
+
+{% block body %}
+<body>
+   {% block header %}
+   <header id="head">  
+          
+    <div id="img-src">
+        {% for item in base %}
+        <img id='image' src="{{item.image.url}}" alt="">
+        {% endfor %}
+       
+    </div>
+
+    <div id="title">
+        {% for item in base %}
+            <h1>{{item.title}}</h1>
+        {% endfor %}
+        
+    </div>
+
+    <div id=details-sec>
+        <button id="details"><a  id="details1" href="{% url 'logout' %}">Logout</a></button>
+       
+    </div>
+    </header>
+   {% endblock header %}
+
+
+    <div id='container'>
+        <div id="main">
+            <div class="domain">
+                <h2>Teams</h2>
+                {% for item in data %}
+                <li id="font1"> {{item.team}} </li>
+                {% endfor %}
+            </div>
+        
+            <div class="domain1">
+                <h2>Played</h2>
+                {% for item in data %}
+                <li id="font"> {{item.played}} </li>
+                {% endfor %}
+            </div>
+        
+            <div class="domain2">
+                <h2>Goal_Diff</h2>
+                {% for item in data %}
+                <li id="font"> {{item.goal_diff}} </li>
+                {% endfor %}
+            </div>
+        
+            <div class="domain3">
+                <h2>Points</h2>
+                {% for item in data %}
+                <li id="font"> {{item.points}} </li>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div id="co_domain">
+           <div id="play_stat">
+            <button id="btn"> <a href="{% url 'players-stat' %}">Player Stat</a> </button>
+           </div>
+           <div id="about">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui consectetur ad earum placeat iste animi iure. Nam eaque saepe harum eius nulla sapiente nostrum quasi asperiores vel, excepturi ipsa iure.</p>
+            <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error praesentium deserunt corporis consequatur a soluta. Odio aspernatur est quisquam, perferendis, velit quod soluta accusamus inventore doloremque architecto doloribus blanditiis in?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.rror praesentium deserunt.
+            </p>
+           <button class="hover:bg-#60a5fa"> <a href="{% url 'team-details' %}">SQUAD</a></button>
+        </div>
+    </div>
+    
+</body>
+{% endblock body %}

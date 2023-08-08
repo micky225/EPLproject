@@ -1,0 +1,482 @@
+body{
+    margin: 0%;
+    background-image: url(images/log.webp);
+    background-size: cover;
+}
+#head{
+    /* border: 1px solid blue; */
+    height: 17vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-color);
+}
+
+#img-src{
+    /* border: 1px solid black; */
+    width: 12%;
+}
+
+#image{
+    height: 80%;
+    width: 80%;
+    border-radius: 15px;
+    margin-top: 6%;
+    margin-left: 9%;
+    mix-blend-mode:multiply;
+}
+
+#title{
+    /* border: 1px solid green; */
+    width: 20%;
+    height: 70%;
+    margin-top: 1%;
+    color:  #1e064bf5;
+
+}
+
+#details-sec{
+    /* border: 1px solid red; */
+    width: 5%;
+    margin-left: 59%;
+}
+
+#details{
+    height: 4vh;
+    font-size: larger;
+    margin-top: 40%;
+    width: 10vh;
+    background-color: #1e064bf5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#details1{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#details:hover {
+    background-color: #230161;
+    border-color: #230161;
+    cursor: pointer;
+}
+
+#font1{
+    font-size: large;
+    list-style: none;
+    margin-top: 9%;
+
+}
+
+#font{
+    font-size: large;
+    list-style: none;
+    margin-top: 9%;
+
+}
+
+h2{
+    color:  #1e064bf5;
+}
+
+
+#main{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    width: 38%;
+    margin-left: 18%;
+    margin-top: 2%;
+    background-color: var(--bg-color);
+    background: hsla(0, 45%, 2%, 0.1);
+    backdrop-filter: blur(1rem);
+    box-shadow: rgba(17, 12, 46, 0.5) 0px 5px 10px 0px;
+    transition: all .40s ease; 
+    border-radius: 10px;
+    height: 76.7vh;
+}
+
+/* #main:hover{
+    transform: translateX(10px);
+    cursor:pointer;
+} */
+
+.domain{
+    /* border: 0.5px solid black; */
+    width: 17%;
+    margin-left: 3%;
+}
+
+.domain1{
+    /* border: 0.5px solid black; */
+    width: 17%;
+    margin-left: 7%;
+}
+
+.domain2{
+    /* border: 0.5px solid black; */
+    width: 17%;
+    margin-left: 10%;
+}
+
+.domain3{
+    /* border: 0.5px solid black; */
+    width: 17%;
+    margin-left: 7%;
+}
+
+#container{
+    /* border: 0.5px solid black; */
+    display: flex;
+    flex-direction: row;
+}
+
+#co_domain{
+    /* border: 0.5px solid black; */
+    margin-left: 2%;
+    width: 20%;
+    margin-top: 2%;
+    height: 75vh;
+    /* transition: all .40s ease;  */
+}
+
+
+#play_stat{
+    height: 50%;
+    /* border: 1px solid black; */
+    background-image: url(images/rashy.jpg);
+    background-size: cover;
+    background-color: var(--bg-color);
+    box-shadow: rgba(17, 12, 46, 0.5) 0px 5px 10px 0px;
+    border-radius: 10px;
+    transition: all .20s ease; 
+   
+}
+
+#btn{
+    margin-left: 64%;
+    margin-top: 77.4%;
+    width: 33%;
+    height: 5vh;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 10px;
+    border: none;
+    background: hsla(0, 45%, 2%, 0.1);
+    backdrop-filter: blur(1rem);
+    transition: all .40s ease; 
+}
+
+#btn a{
+    color: rgba(255, 255, 255, 0.582);
+    text-decoration: none;
+}
+
+#btn:hover{
+    transform: translateX(10px);
+    cursor:pointer;
+}
+
+h3{
+    color:  #1e064bf5;
+}
+
+#about{
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 9%;
+    height: 50%;
+    margin-top: 4%;
+    background-color: var(--bg-color);
+    background: hsla(0, 45%, 2%, 0.1);
+    backdrop-filter: blur(1rem);
+    box-shadow: rgba(17, 12, 46, 0.5) 0px 5px 10px 0px;
+    border-radius: 10px;
+    transition: all .20s ease; 
+}
+
+button{
+    height: 3.5vh;
+    font-size: large;
+    width: 8vh;
+    background-color:  #1e064bf5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+button a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    #image{
+    height: 45%;
+    width: 85px;
+    border-radius: 10px;
+    margin-top: 50%;
+    margin-left: 9%;
+    }
+
+    #title{
+        /* border: 1px solid green; */
+        width: 15px;
+        height: 70%;
+        margin-top: 3%;
+        font-size: 60%;
+        margin-left: 8%;
+    
+    }
+    #details-sec{
+        /* border: 1px solid red; */
+        width: 3%;
+        margin-left: 57%;
+    }
+    
+    #details{
+        height: 4vh;
+        font-size: medium;
+        margin-top: 44px;
+        width: 10vh;
+    }
+
+    #container{
+        display: flex;
+        flex-direction:column;
+    }
+
+    #main{
+        /* border: 1px solid blue; */
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 7%;
+        background-color: var(--bg-color);
+        box-shadow: rgba(17, 12, 46, 0.5) 0px 5px 10px 0px;
+        transition: all .40s ease; 
+        border-radius: 10px;
+        height: 80.9vh;
+    }
+    
+    #co_domain{
+        /* border: 0.5px solid black; */
+        margin-left: 2%;
+        width: 20%;
+        margin-top: 8%;
+        height: 75vh;
+        /* transition: all .40s ease;  */
+    }
+
+    #font1{
+        font-size: medium;
+        list-style: none;
+        margin-top: 9.5px;
+    
+    }
+
+    #font{
+        font-size: medium;
+        list-style: none;
+        margin-top: 11.7px;
+    
+    }
+
+    h2{
+        font-size: large;
+    }
+
+    .domain{
+        margin-left: 11px;
+    }
+    
+    .domain1{
+        margin-left: 75px;
+        
+    }
+    
+    .domain2{
+        margin-left: 20px;
+    }
+    
+    .domain3{
+        margin-left: 40px;
+    }
+    
+    #play_stat{
+        height: 38vh;
+        background-size: contain; 
+        width: 400px;
+        margin-left: 25px;
+       
+    }
+
+    #btn{
+        margin-left: 69;
+        margin-top: 65.4%;
+        width: 28%;
+        height: 4.5vh;
+        font-size: medium;
+    }
+
+    #about{
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-right: 13%;
+        height: 41vh;
+        margin-top: 25px;
+        width: 400px;
+        margin-left: 18px;
+    }
+
+    button{
+        height: 3.5vh;
+        font-size: smaller;
+        width: 8vh;
+        background-color:  #1e064bf5;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    #image{
+    height: 45%;
+    width: 85px;
+    border-radius: 10px;
+    margin-top: 50%;
+    margin-left: 9%;
+    }
+
+    #title{
+        /* border: 1px solid green; */
+        width: 15px;
+        height: 70%;
+        margin-top: 3%;
+        font-size: 60%;
+        margin-left: 8%;
+    
+    }
+    #details-sec{
+        /* border: 1px solid red; */
+        width: 3%;
+        margin-left: 57%;
+    }
+    
+    #details{
+        height: 4vh;
+        font-size: medium;
+        margin-top: 44px;
+        width: 10vh;
+    }
+
+    #container{
+        display: flex;
+        flex-direction:column;
+    }
+
+    #main{
+        /* border: 1px solid blue; */
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 7%;
+        background-color: var(--bg-color);
+        box-shadow: rgba(17, 12, 46, 0.5) 0px 5px 10px 0px;
+        transition: all .40s ease; 
+        border-radius: 10px;
+        height: 80.9vh;
+    }
+    
+    #co_domain{
+        /* border: 0.5px solid black; */
+        margin-left: 2%;
+        width: 20%;
+        margin-top: 8%;
+        height: 75vh;
+        /* transition: all .40s ease;  */
+    }
+
+    #font1{
+        font-size: medium;
+        list-style: none;
+        margin-top: 9.5px;
+    
+    }
+
+    #font{
+        font-size: medium;
+        list-style: none;
+        margin-top: 10.5px;
+    
+    }
+
+    h2{
+        font-size: large;
+    }
+
+    .domain{
+        margin-left: 11px;
+    }
+    
+    .domain1{
+        margin-left: 75px;
+        
+    }
+    
+    .domain2{
+        margin-left: 20px;
+    }
+    
+    .domain3{
+        margin-left: 40px;
+    }
+    
+    #play_stat{
+        height: 38vh;
+        background-size: contain; 
+        width: 400px;
+        margin-left: 80px;
+       
+    }
+
+    #btn{
+        margin-left: 69%;
+        margin-top: 65.4%;
+        width: 28%;
+        height: 4.5vh;
+        font-size: medium;
+    }
+
+    #about{
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-right: 13%;
+        height: 41vh;
+        margin-top: 35px;
+        width: 400px;
+        margin-left: 71px;
+    }
+
+    button{
+        height: 3.5vh;
+        font-size: smaller;
+        width: 8vh;
+        background-color:  #1e064bf5;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+}

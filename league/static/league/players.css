@@ -1,0 +1,55 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(images/log.webp);
+    background-size: cover;    
+}
+
+li{
+    list-style: none;
+    font-size: large;
+    margin-top: 8%;
+}
+h1{
+    color: #1e064bf5;
+}
+
+#move{
+    margin-left: 50px;
+}
+
+h2{
+    color: #1e064bf5;
+}
+
+#head{
+    /* border: 1px solid; */
+    height: 15vh;
+    background-color: var(--bg-color);
+    width: 194.5%;
+}
+
+#main{
+    /* border: 1px solid blue; */
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    width: 190.5%;
+    flex-direction: row;
+    background-color: var(--bg-color);
+    background: hsla(0, 45%, 2%, 0.1);
+    backdrop-filter: blur(1rem);
+    box-shadow: rgba(17, 12, 46, 0.5) 0px 5px 10px 0px;
+    transition: all .40s ease; 
+    border-radius: 10px;
+    margin-left: 30px;
+    /* background-image: url(images/new.jpg);
+    background-size: cover; */
+}
+
+.domain{
+    /* border: 1px solid blue; */
+    width: 19%;
+    margin-left: 2%;
+}
+
